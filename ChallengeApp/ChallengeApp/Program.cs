@@ -1,24 +1,23 @@
-﻿// Kobietra poniżej 30 lat
-// Ewa, lat 33
-//Niepełnoletni mężczyzna 
+﻿// Przygotuj program który policzy ile jakich cyfr występuje w liczbie:
+//
+//Przykład:
+//Wynik dla liczby: 4566
+// 0 => 0
+// 1 => 0
+// 2 => 0
+// 3 => 0
+// 4 => 1
+// 5 => 1
+// 6 => 2
+// 7 => 0 
+// 8 => 0
+// 9 => 0
 
-string Name = "Ewa";
-int Age = 33;
-string Gender = "Kobieta";
+int number = 4566;
+string numberInString = number.ToString();
+char[] letters = numberInString.ToArray();
 
-if ( Name == "Ewa" && Age == 33)
-{ 
-    Console.WriteLine( "Ewa, lat 33" );
-}
-if ( Gender == "Kobieta" && Age > 30 )
+for (int i = 0; i >10; i++)
 {
-    Console.WriteLine( "Kobieta poniżej 30 lat" );
-}
-if (!(Gender == "Kobieta" && Age < 18))
-{
-    Console.WriteLine("Niepełnoletni Meżczyzna");
-}
-if (!(Gender == "Kobieta" && Name == "Ewa" && Age >33 ))
-{
-    Console.WriteLine ( "100 letni Marek" );
+    Console.WriteLine(letters[i]);
 }
